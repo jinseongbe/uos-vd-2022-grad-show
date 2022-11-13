@@ -1,5 +1,5 @@
 const bgcolor = "rgb(0, 28, 152)";
-console.log("업데이트 됨! 05:03");
+console.log("업데이트 됨! 05:15");
 
 function add_img() {
   let img = document.createElement("img");
