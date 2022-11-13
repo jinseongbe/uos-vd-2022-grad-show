@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Yoon_550";
+  src: url("./assets/font/YG550.ttf") format("ttf");
+}
+
 html,
 body {
   margin: 0;
@@ -11,9 +16,11 @@ body {
 }
 
 .logo {
-  margin-top: 1vh;
+  /* margin-top: 1vh; */
   width: 95vw;
   position: fixed;
+  padding: 10px;
+  /* background-color: white; */
 }
 
 .imageContainer {
@@ -60,8 +67,6 @@ body {
   margin-top: 1vh;
 }
 
-.underLine {
-  /* width: 31.2vh; 5vh * 7vh * 0.89vh */
-  /* transform: translate(3.75vh, -0.5vh); */
-  /* border-bottom: solid 1vh #081899; */
+.standby {
+  width: 100vw;
 }

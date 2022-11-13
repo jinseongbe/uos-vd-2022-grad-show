@@ -31,10 +31,8 @@ const studentImg = [
   "yje_02.png",
   "ysh_01.png",
   "ysh_02.png",
-  // "chw_01.png",
-  // "chw_02.png",
-  // "chw_01.png",
-  // "chw_02.png",
+  "lsy_01.jpg",
+  "lsy_02.jpg",
 ];
 
 window.onload = function () {
@@ -65,12 +63,10 @@ if (windowWidth.matches) {
   console.log("모바일이여라");
   randWidth = [...randWidthMoblie];
   randMarginLeft = [...randMarginLeftMobile];
-  console.log(randWidth, randMarginLeft);
 } else {
   console.log("PC 여라");
   randWidth = [...randWidthPc];
   randMarginLeft = [...randMarginLeftPc];
-  console.log(randWidth, randMarginLeft);
 }
 
 window.addEventListener(
@@ -123,7 +119,6 @@ let scrollValue = 0;
 let delay = 100;
 document.addEventListener("scroll", function () {
   let currentScrollValue = document.documentElement.scrollTop;
-  // console.log(currentScrollValue);
   for (let i = 0; i < txtBox.length; i++) {
     txtBox[i].style.opacity = 1;
     // txtBox[i].style.opacity =
