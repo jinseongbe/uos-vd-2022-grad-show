@@ -135,7 +135,9 @@ addressLink.addEventListener("click", () => {
   if (txtBox[3].style.opacity > 0.1) {
     addressLink.style.display = "block";
     addressLink.rel = "noopener noreferrer";
-    addressLink.href = "http://kko.to/2mcFP9NJS0";
+    addressLink.href =
+      "https://m.place.naver.com/place/1945589123/location?subtab=location";
+
     addressLink.target = "_blank";
   } else {
     addressLink.removeAttribute("href");
