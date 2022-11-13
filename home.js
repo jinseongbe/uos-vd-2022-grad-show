@@ -19,7 +19,7 @@ const studentImg = [
   "lhj_02.jpeg",
   "lsg_01.jpg",
   "lsg_02.png",
-  "mju_01.jpg",
+  "mju_03.jpeg",
   "mju_02.jpg",
   "pjs_01.png",
   "pjs_02.png",
