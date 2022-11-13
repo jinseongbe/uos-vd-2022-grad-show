@@ -123,7 +123,7 @@ let scrollValue = 0;
 let delay = 100;
 document.addEventListener("scroll", function () {
   let currentScrollValue = document.documentElement.scrollTop;
-  console.log(currentScrollValue);
+  // console.log(currentScrollValue);
   for (let i = 0; i < txtBox.length; i++) {
     txtBox[i].style.opacity = 1;
     // txtBox[i].style.opacity =
@@ -137,7 +137,6 @@ document.addEventListener("scroll", function () {
 
 const addressLink = document.querySelector(".txt_en_box a");
 addressLink.addEventListener("click", () => {
-  console.log(txtBox[3].style.opacity);
   if (txtBox[3].style.opacity > 0.1) {
     addressLink.style.display = "block";
     addressLink.rel = "noopener noreferrer";
@@ -147,4 +146,9 @@ addressLink.addEventListener("click", () => {
     addressLink.removeAttribute("href");
     addressLink.removeAttribute("target");
   }
+});
+
+const mainLogo = document.querySelector(".logo");
+mainLogo.addEventListener("click", () => {
+  window.location.reload();
 });
