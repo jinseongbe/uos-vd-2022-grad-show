@@ -37,16 +37,8 @@ makeGif = setInterval(function () {
   handleGif();
 }, 400);
 
-// clearInterval(makeGif);
-
-// function handleTitleClick(){
-//   const clickedClass = "clicked"; //string을 변수에 저장하면 오류가 떠도 에러를 잡아준다.
-//   if (h1.className === clickedClass) {
-//     h1.className = "";
-//   } else {
-//     h1.className = clickedClass;
-//   }
-// }
-
-// // title에 click 이벤트가 발생하면 handleTitleClick 함수가 동작되길 원해!
-// h1.addEventListener("click", handleTitleClick);
+gifContainer.addEventListener("click", () => {
+  clearInterval(makeGif);
+  gifContainer.rel = "noopener noreferrer";
+  gifContainer.href = "https://naver.me/FXHu9h6y";
+});
