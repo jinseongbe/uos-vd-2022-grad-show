@@ -4,6 +4,8 @@ function add_img() {
   let img = document.createElement("img");
   img.src = "./assets/standby/white.png";
   img.className = "gif_white";
+  img.style.marginTop = "5vh";
+  img.style.marginBottom = "5vh";
 
   document.querySelector(".gifContainer").appendChild(img);
 
@@ -11,6 +13,8 @@ function add_img() {
   img2.src = "./assets/standby/blue.png";
   img2.className = "gif_blue";
   img2.style.display = "none";
+  img2.style.marginTop = "5vh";
+  img2.style.marginBottom = "5vh";
 
   document.querySelector(".gifContainer").appendChild(img2);
 }
