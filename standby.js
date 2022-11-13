@@ -77,7 +77,8 @@ window.onload = function () {
     gifContainer.addEventListener("click", () => {
       clearInterval(makeGif);
       gifContainer.rel = "noopener noreferrer";
-      gifContainer.href = "https://naver.me/FXHu9h6y";
+      gifContainer.href =
+        "https://m.place.naver.com/place/1945589123/location?subtab=location";
     });
   } else {
     console.log("PC 여라");
