@@ -2,19 +2,19 @@ const bgcolor = "rgb(16, 6, 159)";
 
 function add_img() {
   let img = document.createElement("img");
-  img.src = "./assets/standby/white.png";
+  img.src = "./assets/standby/all_white.png";
   img.className = "gif_white";
-  img.style.marginTop = "5vh";
-  img.style.marginBottom = "5vh";
+  img.style.objectFit = "contain";
+  img.style.width = "100vw";
 
   document.querySelector(".gifContainer").appendChild(img);
 
   let img2 = document.createElement("img");
-  img2.src = "./assets/standby/blue.png";
+  img2.src = "./assets/standby/all_blue.png";
   img2.className = "gif_blue";
+  img2.style.objectFit = "contain";
   img2.style.display = "none";
-  img2.style.marginTop = "5vh";
-  img2.style.marginBottom = "5vh";
+  img2.style.width = "100vw";
 
   document.querySelector(".gifContainer").appendChild(img2);
 }
