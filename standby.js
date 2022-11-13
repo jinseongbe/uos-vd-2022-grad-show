@@ -53,15 +53,18 @@ window.onload = function () {
     }
     const whiteSide = document.querySelector(".gif_white");
     const blueSide = document.querySelector(".gif_blue");
+    const body = document.querySelector("body");
 
     function handleGif() {
       if (blueSide.style.display === "none") {
         whiteSide.style.display = "none";
-        gifContainer.style.background = bgcolor;
+        body.style.background = bgcolor;
+        // gifContainer.style.background = bgcolor;
         blueSide.style.display = "block";
       } else {
         whiteSide.style.display = "block";
-        gifContainer.style.background = "white";
+        body.style.background = "white";
+        // gifContainer.style.background = "white";
         blueSide.style.display = "none";
       }
     }
