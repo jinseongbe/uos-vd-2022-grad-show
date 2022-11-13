@@ -1,5 +1,5 @@
 const bgcolor = "rgb(0, 28, 152)";
-console.log("업데이트 됨! 04:33");
+console.log("업데이트 됨! 04:57");
 
 function add_img() {
   let img = document.createElement("img");
@@ -7,7 +7,7 @@ function add_img() {
   img.className = "gif_white";
   img.style.objectFit = "contain";
   img.style.width = "100vw";
-  img.style.paddingTop = "0 + calc(constant(safe-area-inset-bottom)";
+  img.style.padding = "10px 0 calc(constant(safe-area-inset-top))";
 
   document.querySelector(".gifContainer").appendChild(img);
 
@@ -16,10 +16,11 @@ function add_img() {
   img2.className = "gif_blue";
   img2.style.objectFit = "contain";
   img2.style.display = "none";
+  img2.style.padding = "10px 0 calc(constant(safe-area-inset-top))";
   img2.style.width = "100vw";
-  img2.style.paddingTop = "0 + calc(constant(safe-area-inset-bottom)";
 
   document.querySelector(".gifContainer").appendChild(img2);
+  console.dir(img2.style);
 }
 
 function add_img_desk() {

@@ -88,6 +88,16 @@ body {
   background-color: rgb(0, 28, 152);
 }
 
+.gif_white {
+  padding: 10px 0 calc(constant(safe-area-inset-bottom));
+  padding: 10px 0 calc(env(safe-area-inset-bottom));
+}
+
+.gif_blue {
+  padding: 10px 0 calc(constant(safe-area-inset-bottom));
+  padding: 10px 0 calc(env(safe-area-inset-bottom));
+}
+
 .deskBlue {
   width: 100vw;
 }
