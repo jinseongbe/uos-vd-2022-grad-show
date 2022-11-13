@@ -3,7 +3,7 @@ console.log("업데이트 됨! 06:56");
 
 function add_img() {
   let img = document.createElement("img");
-  img.src = "./assets/standby/all_white.png";
+  img.src = "./assets/standby/all_white_cut.png";
   img.className = "gif_white";
   img.style.objectFit = "contain";
   img.style.width = "100vw";
@@ -11,7 +11,7 @@ function add_img() {
   document.querySelector(".gifContainer").appendChild(img);
 
   let img2 = document.createElement("img");
-  img2.src = "./assets/standby/all_blue.png";
+  img2.src = "./assets/standby/all_blue_cut.png";
   img2.className = "gif_blue";
   img2.style.objectFit = "contain";
   img2.style.display = "none";
