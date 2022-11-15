@@ -33,6 +33,36 @@ const studentImg = [
   "ysh_02.png",
   "lsy_01.jpg",
   "lsy_02.jpg",
+  "sjy_01.png",
+  "sjy_02.png",
+];
+
+let firstImg = [
+  "chw_02.jpg",
+  "hsh_01.jpg",
+  "hsh_02.jpg",
+  "jsh_02.png",
+  "khm_02.png",
+  "kjm_02.png",
+  "kky_01.png",
+  "ldh_01.jpg",
+  "lhj_01.jpeg",
+  "lhj_02.jpeg",
+  "lsg_01.jpg",
+  "lsg_02.png",
+  "pjs_01.png",
+  "pjs_02.png",
+  "shk_01.jpg",
+  "shk_02.png",
+  "ujw_01.png",
+  "ujw_02.jpeg",
+  "yje_01.jpeg",
+  "yje_02.png",
+  "ysh_01.png",
+  "ysh_02.png",
+  "lsy_01.jpg",
+  "lsy_02.jpg",
+  "sjy_02.png",
 ];
 
 window.onload = function () {
@@ -93,8 +123,27 @@ function shuffle(array) {
 }
 
 function add_img() {
-  shuffle(studentImg);
+  shuffle(firstImg);
+  // console.log(studentImg);
+  const first = firstImg.shift();
+  // console.log(first);
+  for (var i = 0; i < studentImg.length; i++) {
+    if (studentImg[i] === first) {
+      studentImg.splice(i, 1);
+      i--;
+    }
+  }
 
+  let img = document.createElement("img");
+  img.src = "./assets/image/" + first;
+  img.className = "works";
+  let randIdx = Math.round(Math.random() * (randWidth.length - 1));
+  img.style.width = randWidth[randIdx];
+  img.style.marginLeft = randMarginLeft[randIdx][Math.round(Math.random() * 1)];
+
+  document.querySelector(".imageContainer").appendChild(img);
+
+  shuffle(studentImg);
   for (let i = 0; i < studentImg.length; i++) {
     let img = document.createElement("img");
     img.src = "./assets/image/" + studentImg[i];
@@ -106,6 +155,7 @@ function add_img() {
 
     document.querySelector(".imageContainer").appendChild(img);
   }
+  // console.log(studentImg);
 }
 
 add_img();
