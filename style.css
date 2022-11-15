@@ -53,7 +53,7 @@ body {
 }
 
 .txt_en_02 {
-  margin-top: 6vh;
+  margin-top: 2vh;
 }
 
 .txt_en_03 {
@@ -97,4 +97,13 @@ body {
 
 .deskWhite {
   width: 100vw;
+}
+
+.instaTxt {
+  height: 3vh;
+  margin-left: 0.9vh;
+}
+
+.mapTxt {
+  height: 3vh;
 }

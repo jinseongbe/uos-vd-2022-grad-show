@@ -132,20 +132,32 @@ document.addEventListener("scroll", function () {
 
 const addressLink = document.querySelector(".txt_en_box a");
 addressLink.addEventListener("click", () => {
-  if (txtBox[3].style.opacity > 0.1) {
-    addressLink.style.display = "block";
-    addressLink.rel = "noopener noreferrer";
-    addressLink.href =
-      "https://m.place.naver.com/place/1945589123/location?subtab=location";
+  // addressLink.style.display = "block";
+  addressLink.rel = "noopener noreferrer";
+  addressLink.href =
+    "https://m.place.naver.com/place/1945589123/location?subtab=location";
 
-    addressLink.target = "_blank";
-  } else {
-    addressLink.removeAttribute("href");
-    addressLink.removeAttribute("target");
-  }
+  addressLink.target = "_blank";
 });
 
 const mainLogo = document.querySelector(".logo");
 mainLogo.addEventListener("click", () => {
   window.location.reload();
+});
+
+const addressLink2 = document.querySelector(".map_link img");
+addressLink2.addEventListener("click", () => {
+  addressLink2.rel = "noopener noreferrer";
+  addressLink2.href =
+    "https://m.place.naver.com/place/1945589123/location?subtab=location";
+
+  addressLink2.target = "_blank";
+});
+
+const addressLink3 = document.querySelector(".insta_link");
+addressLink3.addEventListener("click", () => {
+  addressLink3.rel = "noopener noreferrer";
+  addressLink3.href = "https://instagram.com/uosvd_2022?igshid=YmMyMTA2M2Y=";
+
+  addressLink3.target = "_blank";
 });
