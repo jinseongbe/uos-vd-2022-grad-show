@@ -62,7 +62,6 @@ let firstImg = [
   "ysh_02.png",
   "lsy_01.jpg",
   "lsy_02.jpg",
-  "sjy_02.png",
 ];
 
 window.onload = function () {
