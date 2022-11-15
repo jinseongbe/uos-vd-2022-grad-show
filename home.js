@@ -1,7 +1,7 @@
 const studentImg = [
   "chw_01.jpg",
   "chw_02.jpg",
-  "hsh_01.jpg",
+  "hsh_01.jpeg",
   "hsh_02.jpg",
   "jsh_01.jpg",
   "jsh_02.png",
@@ -14,13 +14,13 @@ const studentImg = [
   "kky_01.png",
   "kky_02.png",
   "ldh_01.jpg",
-  "ldh_02.jpg",
+  "ldh_02.jpeg",
   "lhj_01.jpeg",
   "lhj_02.jpeg",
   "lsg_01.jpg",
   "lsg_02.png",
   "mju_03.jpeg",
-  "mju_02.jpg",
+  "mju_02.jpeg",
   "pjs_01.png",
   "pjs_02.png",
   "shk_01.jpg",
@@ -28,7 +28,7 @@ const studentImg = [
   "ujw_01.png",
   "ujw_02.jpeg",
   "yje_01.jpeg",
-  "yje_02.png",
+  "yje_02.jpg",
   "ysh_01.png",
   "ysh_02.png",
   "lsy_01.jpg",
@@ -39,7 +39,7 @@ const studentImg = [
 
 let firstImg = [
   "chw_02.jpg",
-  "hsh_01.jpg",
+  "hsh_01.jpeg",
   "hsh_02.jpg",
   "jsh_02.png",
   "khm_02.png",
@@ -57,7 +57,7 @@ let firstImg = [
   "ujw_01.png",
   "ujw_02.jpeg",
   "yje_01.jpeg",
-  "yje_02.png",
+  "yje_02.jpg",
   "ysh_01.png",
   "ysh_02.png",
   "lsy_01.jpg",
@@ -142,6 +142,7 @@ function add_img() {
   img.style.marginLeft = randMarginLeft[randIdx][Math.round(Math.random() * 1)];
 
   document.querySelector(".imageContainer").appendChild(img);
+  console.dir(img);
 
   shuffle(studentImg);
   for (let i = 0; i < studentImg.length; i++) {
