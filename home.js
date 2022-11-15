@@ -148,6 +148,7 @@ function add_img() {
   for (let i = 0; i < studentImg.length; i++) {
     let img = document.createElement("img");
     img.src = "./assets/image/" + studentImg[i];
+    img.loading = "lazy";
     img.className = "works";
     let randIdx = Math.round(Math.random() * (randWidth.length - 1));
     img.style.width = randWidth[randIdx];
