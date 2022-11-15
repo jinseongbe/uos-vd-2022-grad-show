@@ -142,7 +142,6 @@ function add_img() {
   img.style.marginLeft = randMarginLeft[randIdx][Math.round(Math.random() * 1)];
 
   document.querySelector(".imageContainer").appendChild(img);
-  console.dir(img);
 
   shuffle(studentImg);
   for (let i = 0; i < studentImg.length; i++) {
